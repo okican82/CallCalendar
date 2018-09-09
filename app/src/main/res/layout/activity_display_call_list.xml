@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayCallList.DisplayCallList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorTransperent"
+            android:src="@android:drawable/ic_input_add" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorTransperent"
+            android:src="@android:drawable/ic_delete" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorTransperent"
+            android:src="@android:drawable/ic_dialog_info" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/CallLists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonsLayout"
+        android:layout_alignParentStart="true"></ListView>
+
+</RelativeLayout>
